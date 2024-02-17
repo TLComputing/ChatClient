@@ -20,9 +20,7 @@
   </form>
   <script type="text/javascript">
     localStorage.setItem('minhaChave', 'meuValor');
-    <!-- var socket = io('ws://0.tcp.sa.ngrok.io:15512'); -->
-    var socket = io('http://localhost:3333');
-
+    var socket = io('ws://127.0.0.1:8000');
     function renderMessage(message) {
       if (!message.username) {
         return;
